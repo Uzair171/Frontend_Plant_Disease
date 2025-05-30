@@ -28,7 +28,7 @@ const App = () => {
     formData.append('image', selectedImage);
 
     try {
-      const response = await fetch('https://plant-disease-production.up.railway.app/', {
+      const response = await fetch('https://plant-disease-production.up.railway.app/api/predict', {
         method: 'POST',
         body: formData,
       });
